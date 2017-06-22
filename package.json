@@ -1,0 +1,23 @@
+{
+  "name": "auctions-shop",
+  "version": "1.0.0",
+  "description": "AuctionShop",
+  "main": "server.js",
+  "scripts": {
+	"start": "node server",
+	"deploy": "gcloud preview app deploy app.yaml --promote"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Riederich",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "express": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongoose": "*",
+    "mongoose-auto-increment": "3.0.2"
+  }
+}
