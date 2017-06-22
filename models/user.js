@@ -1,9 +1,4 @@
 const mongoose = require('mongoose');
-const autoIncrement = require('mongoose-auto-increment');
-const bcrypt = require('bcryptjs');
-const connection = mongoose.createConnection('mongodb://localhost/auctionShop');
-
-autoIncrement.initialize(connection);
 
 // User Schema
 var UserSchema = mongoose.Schema({
@@ -39,8 +34,6 @@ var UserSchema = mongoose.Schema({
         type: String
     }
 });
-
-UserSchema.plugin(autoIncrement.plugin, {model: 'User', field: 'userId'});
 
 const User = module.exports = mongoose.model('User', UserSchema);
 

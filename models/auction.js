@@ -1,9 +1,4 @@
 const mongoose = require('mongoose');
-const autoIncrement = require('mongoose-auto-increment');
-const bcrypt = require('bcryptjs');
-const connection = mongoose.createConnection('mongodb://localhost/auctionShop');
-
-autoIncrement.initialize(connection);
 
 // Auction Schema
 const AuctionSchema = mongoose.Schema({
@@ -22,8 +17,6 @@ const AuctionSchema = mongoose.Schema({
     bestBidder: String,
     bestBid: Number
 });
-
-AuctionSchema.plugin(autoIncrement.plugin, {model: 'Auction', field: 'auctionId'});
 
 const Auction = module.exports = mongoose.model('Auction', AuctionSchema);
 

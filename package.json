@@ -1,5 +1,5 @@
 {
-  "name": "auctions-shop",
+  "name": "auctionshop",
   "version": "1.0.0",
   "description": "AuctionShop",
   "main": "server.js",
@@ -10,13 +10,8 @@
   "author": "David Riederich",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "*",
     "body-parser": "*",
     "express": "*",
-    "express-messages": "*",
-    "express-session": "*",
-    "express-validator": "*",
-    "mongoose": "*",
-    "mongoose-auto-increment": "3.0.2"
+    "mongoose": "^4.x.x"
   }
 }
