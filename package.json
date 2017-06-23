@@ -4,7 +4,7 @@
   "description": "AuctionShop",
   "main": "server.js",
   "scripts": {
-	"start": "node server",
+	"start": "node server.js",
 	"deploy": "gcloud preview app deploy app.yaml --promote"
   },
   "author": "David Riederich",
