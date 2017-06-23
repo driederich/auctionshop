@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // connect to mongodb
-mongoose.connect('mongodb://localhost:27017/auctionshop');
+mongoose.connect('mongodb://admin:admin1234@ds135382.mlab.com:35382/auctionshop');
 
 //set up static files
 app.use(express.static('public'));
